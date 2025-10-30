@@ -11,4 +11,4 @@ class Enemy(Entity):
     def attack(self, entity: Hero):
         dmg = random.randint(1,4)
         entity.take_damage(dmg)
-        return f"{self._name} attacked {entity._name} for {dmg}."
+        return f"{self._name} attacked {entity._name} for {dmg} damage."

@@ -17,7 +17,7 @@ class Hero(Entity):
     def attack(self, entity : Entity):
         dmg = random.randint(2,25)
         entity.take_damage(dmg)
-        return f"{self._name} attacked {entity._name} for {dmg}."
+        return f"{self._name} attacked {entity._name} for {dmg} damage."
     
 
     #self._loc[0] : Row

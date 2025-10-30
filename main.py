@@ -27,6 +27,10 @@ def main():
     map = Map()
     
     while hero.hp > 0:
+
+        if(map[hero.location[0]][hero.location[1]] == 'f'):
+            print("Congratulation! You found the exit.")
+            break
         # Display hero info
         print(hero)
         
@@ -56,7 +60,7 @@ def main():
                 print("You encountered ", end ='')
                 print(monster)
 
-                while monster.hp > 0 and hero.hp > 0 or map[hero.location[0]][hero.location[1]] == 'f':
+                while monster.hp > 0 and hero.hp > 0:
                     print(f"1. Attack {monster.name}")
                     print("2. Run away")
 
